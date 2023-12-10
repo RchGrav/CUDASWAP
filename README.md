@@ -45,7 +45,7 @@ source ~/.bashrc
 1. Place `cudaswap.sh` in the `scripts` folder within your home directory. If the folder doesn't exist, create it:
    ```bash
    mkdir -p ~/scripts
-   cp path/to/cudaswap.sh ~/scripts/
+   cp cudaswap.sh ~/scripts/
    ```
 2. Add CUDASWAP to your environment as described in the Usage section.
 
