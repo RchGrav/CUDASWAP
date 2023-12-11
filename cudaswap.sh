@@ -34,15 +34,15 @@ check_os_and_arch() {
                 
             else
                 echo "FATAL ERROR: This script is only tested on x86_64 (Standard PC) and aarch64 (Nvidia Jetson) Ubuntu based hosts." >&2
-                exit 1
+                return 1
             fi
         else
             echo "FATAL ERROR: This script is only tested on Ubuntu based hosts." >&2
-            exit 1
+            return 1
         fi
     else
         echo "FATAL ERROR: Unable to determine operating system." >&2
-        exit 1
+        return 1
     fi
 }
 
@@ -113,6 +113,7 @@ function cudaswap() {
         local package_name="cuda-toolkit-${1//./-}"
     else 
         show_help
+        return 1
     fi
 
     local cuda_bin_path="$cuda_folder/bin"
