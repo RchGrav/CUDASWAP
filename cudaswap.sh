@@ -74,7 +74,6 @@ install_cuda_toolkit() {
 
     if ! sudo apt-get install -y "$package_name"; then
         echo "The package $package_name does not exist or failed to install."
-        
         if ! sudo grep -q "^deb .*developer.download.nvidia.com/compute/cuda/repos" /etc/apt/sources.list.d/*; then
             echo "CUDA repository is not installed. Would you like to install it? [Y/N]"
             read -r response
@@ -111,7 +110,7 @@ function cudaswap() {
     elif [[ -n "$1" ]]; then
         local cuda_folder="/usr/local/cuda-$1"
         local package_name="cuda-toolkit-${1//./-}"
-    else 
+    else
         show_help
         return 1
     fi
