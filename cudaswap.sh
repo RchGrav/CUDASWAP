@@ -91,7 +91,7 @@ install_cuda_toolkit() {
     fi
 }
 
-function cuda() {
+function cudaswap() {
     check_os_and_arch
 
     if [[ -z "${LD_LIBRARY_PATH_CUDA_BACKUP}" ]]; then
@@ -109,7 +109,6 @@ function cuda() {
         local package_name="cuda-toolkit-${1//./-}"
     else 
         show_help
-        return 1
     fi
 
     local cuda_bin_path="$cuda_folder/bin"
