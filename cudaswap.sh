@@ -24,7 +24,7 @@ check_os_and_arch() {
 
         if [[ "$ID" == "ubuntu" ]]; then
             VRSN="${VERSION_ID//./}"
-            if [[ VRSN == "2310" ]]; then
+            if [[ $VRSN == "2310" ]]; then
                 VRSN="2204"
             fi
             if [[ "$ARCH" == "x86_64" || "$ARCH" == "aarch64" ]]; then
