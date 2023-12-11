@@ -6,16 +6,17 @@ fi
 
 # Function to display help information
 show_help() {
-    echo "Usage: $0 [version]"
+    echo "Usage: cudaswap [version]"
     echo
-    echo "This script switches between different installed versions of CUDA."
+    echo "This function switches between different installed versions of CUDA."
     echo "You need to specify the CUDA version in the format ## or ##.#"
     echo "Alternatively, use 'latest' to select the latest available version."
     echo
     echo "Examples:"
-    echo "  $0 11.0    # Switch to CUDA version 11.0"
-    echo "  $0 latest  # Switch to the latest installed CUDA version"
+    echo "  cudaswap 11.0    # Switch to CUDA version 11.0"
+    echo "  cudaswap latest  # Switch to the latest installed CUDA version"
 }
+
 check_os_and_arch() {
     if [[ -f /etc/os-release ]]; then
         source /etc/os-release
