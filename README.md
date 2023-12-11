@@ -38,7 +38,7 @@ source ~/.bashrc
   ```
 - To switch to the default/latest CUDA version:
   ```bash
-  cudaswap
+  cudaswap latest
   ```
 
 ## Installation Instructions
