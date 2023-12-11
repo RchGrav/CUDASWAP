@@ -15,7 +15,6 @@ show_help() {
     echo "Examples:"
     echo "  $0 11.0    # Switch to CUDA version 11.0"
     echo "  $0 latest  # Switch to the latest installed CUDA version"
-    exit 0
 }
 check_os_and_arch() {
     if [[ -f /etc/os-release ]]; then
