@@ -17,6 +17,8 @@ CUDASWAP addresses the challenge of working with multiple projects that may requ
 
 ## Usage
 
+## This project assumes you have installed CUDA using official instructions on a supported version of Ubuntu.
+
 ### Adding CUDASWAP to Your Environment
 To use CUDASWAP, source it in your shell or include it in your `.bashrc` for automatic loading.
 
